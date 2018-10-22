@@ -36,16 +36,16 @@ class Spaceship extends Floater
      corners = 4;
      xCorners = new int[corners];
      yCorners = new int[corners];
-     xCorners[0] = 11;
-     yCorners[0] = 0;
-     xCorners[1] = -6;
+     xCorners[0] = -8;
+     yCorners[0] = -8;
+     xCorners[1] = 16;
      yCorners[1] = 0;
-     xCorners[2] = 0;
-     yCorners[2] = -7;
-     xCorners[3] = 6;
+     xCorners[2] = -8;
+     yCorners[2] = 8;
+     xCorners[3] = -2;
      yCorners[3] = 0;
      myColor = color(255,255,255);
-     myCenterX = myCenterY = 250;
+     myCenterX = myCenterY = 0;
      myDirectionX = myDirectionY = 0;
      myPointDirection = 0;
      
@@ -54,7 +54,7 @@ class Spaceship extends Floater
     beginShape();
     fill(myColor);
     for(int i = 0; i < corners; i++){
-        vertex(xCorners[i],yCorners[i]);
+     vertex(xCorners[i],yCorners[i]); 
     }
     endShape();
    }

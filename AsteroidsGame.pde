@@ -1,13 +1,13 @@
 //your variable declarations here
-Spaceship hi = new Spaceship();
+Spaceship hi;
 public void setup() 
 {
   //your code here
-  size(400,400);
+  size(500,500);
 }
 public void draw() 
 {
-  //your code here
-  //background(0);
+	hi = new Spaceship();
+  hi.show();
   
 }
