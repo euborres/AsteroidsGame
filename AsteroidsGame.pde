@@ -4,8 +4,6 @@ public void setup()
 {
   //your code here
   size(400,400);
-  hi.setDirectionX(0);
-  hi.setDirectionY(0);
 }
 public void draw() 
 {
@@ -15,7 +13,7 @@ public void draw()
 public void keyPressed(){
   if(key == '6'){
     //move to the right
-   // double xDirection = hi.getDirectionX() + 5; git
+    hi.setDirectionX(2);
     
   }
   if(key == '4'){
