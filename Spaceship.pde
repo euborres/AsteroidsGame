@@ -15,13 +15,13 @@ class Spaceship extends Floater
     corners = 4;
     xCorners = new int[corners];
     yCorners = new int[corners];
-    xCorners[0] = -12;
-    yCorners[0] = -12;
+    xCorners[0] = -4;
+    yCorners[0] = -4;
     xCorners[1] = 20;
     yCorners[1] = 4;
-    xCorners[2] = -12;
+    xCorners[2] = -4;
     yCorners[2] = 12;
-    xCorners[3] = -6;
+    xCorners[3] = 2;
     yCorners[3] = 4;
     myColor = color(178,116,245);
     myCenterX = myCenterY = 200;
