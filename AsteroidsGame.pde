@@ -12,11 +12,11 @@ public void setup()
 public void draw() 
 {
   background(0);
-  hi.show();
-  hi.move();
   for(int i = 0; i < nightSky.length; i++){
    nightSky[i].show(); 
   }
+  hi.show();
+  hi.move();
 }
 public void keyPressed(){
   if(key == '6'){
