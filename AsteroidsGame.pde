@@ -1,6 +1,7 @@
 //your variable declarations here
 Star[] nightSky = new Star[200];
 Spaceship hi = new Spaceship();
+Asteroid hello = new Asteroid();
 public void setup() 
 {
   //your code here
@@ -17,6 +18,8 @@ public void draw()
   }
   hi.show();
   hi.move();
+  hello.show();
+  hello.move();
 }
 public void keyPressed(){
   if(key == '6'){
