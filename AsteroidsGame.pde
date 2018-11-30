@@ -10,7 +10,7 @@ public void setup()
   for(int i = 0; i < nightSky.length; i++){
    nightSky[i] = new Star(); 
   }
-  for(int j = 0; j <20; j++){
+  for(int j = 0; j <10; j++){
   	hello.add(j, new Asteroid());
   }
   
@@ -24,8 +24,11 @@ public void draw()
   for(int j = 0; j < hello.size(); j++){
   	hello.get(j).move();
     hello.get(j).show();
-
+    float d = dist(hi.getX(),hi.getY(), hello.get(j).getX(), hello.get(j).getY());
+    if(d < 10)
+      hello.remove(j);
   }
+  
   hi.move();
   hi.show();
 }
