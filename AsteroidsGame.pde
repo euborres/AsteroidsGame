@@ -10,11 +10,10 @@ public void setup()
   for(int i = 0; i < nightSky.length; i++){
    nightSky[i] = new Star(); 
   }
-  /*
-  for(int j = 0; j < hello.length; j++){
-  	hello[j] = new Asteroid();
+  for(int j = 0; j <20; j++){
+  	hello.add(j, new Asteroid());
   }
-  */
+  
 }
 public void draw() 
 {
@@ -22,15 +21,13 @@ public void draw()
   for(int i = 0; i < nightSky.length; i++){
    nightSky[i].show(); 
   }
-  /*
-  for(int j = 0; j < hello.length; j++){
-  	hello[j].show();
-    hello[j].move();
-  }
-  */
-  hi.show();
-  hi.move();
+  for(int j = 0; j < hello.size(); j++){
+  	hello.get(j).move();
+    hello.get(j).show();
 
+  }
+  hi.move();
+  hi.show();
 }
 public void keyPressed(){
   if(key == '6'){
