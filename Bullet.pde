@@ -9,8 +9,10 @@ class Bullet extends Floater{
   public double getDirectionY(){return myDirectionY; }
   public void setPointDirection(int degrees){myPointDirection = degrees; }
   public double getPointDirection(){return myPointDirection;}
-  public Bullet(){
-    myCenterX = myCenterY = 200;
-    myPointDirection = 0;
+  public Bullet(Spaceship theShip){
+  	
+  }
+  public void show(){
+
   }
 }
