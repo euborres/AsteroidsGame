@@ -9,10 +9,22 @@ class Bullet extends Floater{
   public double getDirectionY(){return myDirectionY; }
   public void setPointDirection(int degrees){myPointDirection = degrees; }
   public double getPointDirection(){return myPointDirection;}
+  private int x;
+  private int y;
+  private int r;
+  /*
   public Bullet(Spaceship theShip){
-  	
+	myCenterX = myCenterY = 200;
+    myPointDirection = 0;
+	myDirectionX = 5 * Math.cos(dRadians) + myDirectionX;
+	myDirectionY = 5 * Math.sin(dRadians) + myDirectionY;	
+   	x = 140;
+   	y = 230;
+   	r = 10;
   }
   public void show(){
-
+  	ellipse(x,y,r,r);
   }
+  */
 }
+
