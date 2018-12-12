@@ -13,7 +13,9 @@ public void setup()
   for(int j = 0; j <10; j++){
   	hello.add(j, new Asteroid());
   }
-  
+  for(int k = 0; k < 1; k++){
+     fire.add(k, new Bullet(hi)); 
+  }
   
 }
 public void draw() 
@@ -31,6 +33,11 @@ public void draw()
   }
   hi.move();
   hi.show();
+  for(int k = 0; k < 1; k++){
+   fire.get(k).show(); 
+   fire.get(k).move();
+  }
+  //fire.show();
 }
 public void keyPressed(){
   if(key == '6'){

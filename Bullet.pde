@@ -13,7 +13,6 @@ class Bullet extends Floater{
   private int y;
   private int r;
   private double dRadians;
-  /*
   public Bullet(Spaceship theShip){
 	  myCenterX = myCenterY = 200;
     myPointDirection = 0;
@@ -22,10 +21,11 @@ class Bullet extends Floater{
 	  myDirectionY = 5 * Math.sin(dRadians) + myDirectionY;	
    	x = 140;
    	y = 230;
-   	r = 10;
+   	r = 5;
   }
   public void show(){
+    fill(58,171,229);
+    stroke(58,171,229);
   	ellipse(x,y,r,r);
   }
-  */
 }
