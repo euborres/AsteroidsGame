@@ -33,11 +33,13 @@ public void draw()
   }
   hi.move();
   hi.show();
-  for(int k = 0; k < 1; k++){
-   fire.get(k).show(); 
-   fire.get(k).move();
+  /*
+  for(int k = 0; k < fire.size(); k++){
+      for(int j = 0; j < fire.size(); j++){
+       float x = dist(fire.getX(), fire.getY(), hello);
+      }
   }
-  //fire.show();
+  */
 }
 public void keyPressed(){
   if(key == '6'){
@@ -60,5 +62,8 @@ public void keyPressed(){
   if(key == '5'){
     //accelerate
     hi.accelerate(3);
+  }
+  if(key == '1'){
+    fire.add(new Bullet(hi));
   }
 }
