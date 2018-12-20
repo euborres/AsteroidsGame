@@ -31,15 +31,22 @@ public void draw()
     if(d < 10)
       hello.remove(j);
   }
+  for(int k = 0; k < hello.size(); k++){
+    for(int l = 0; l < fire.size(); l++){
+       float distance = dist(fire.get(l).getX(),fire.get(l).getY(),hello.get(k).getX(),hello.get(k).getY());
+       if(distance <= 50){
+         hello.remove(k);
+         fire.remove(l);
+         break;
+       }
+    }
+  }
   hi.move();
   hi.show();
-  /*
-  for(int k = 0; k < fire.size(); k++){
-      for(int j = 0; j < fire.size(); j++){
-       float x = dist(fire.getX(), fire.getY(), hello);
-      }
+  for(int h = 0; h < fire.size();h++){
+   fire.get(h).show();
+   fire.get(h).move();
   }
-  */
 }
 public void keyPressed(){
   if(key == '6'){
